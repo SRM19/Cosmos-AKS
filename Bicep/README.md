@@ -78,6 +78,12 @@ Create a param.json file by using the following JSON, replace the {Resource Grou
 
 **4. Run Deployment**
 
+Run the following command to enable pod identity if not enabled
+
+```azurecli
+az feature register --name EnablePodIdentityPreview --namespace Microsoft.ContainerService
+```
+
 Run the following script to create the deployment
 
 ```azurecli
